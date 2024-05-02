@@ -4,16 +4,12 @@
 html {
   background: rgba(243, 243, 227, 1);
 }
-
 .containerOne {
-  width: 34px;
-  height: 34px;
-  margin-top: 32px;
-  margin-left: 48px;
-  position: relative;
-  background: rgba(252, 108, 76, 1);
+  background: #fc6c4c;
 }
-
+.fullRange {
+  background: #fc6c4c;
+}
 .numberOne {
   color: white;
   text-align: center;
