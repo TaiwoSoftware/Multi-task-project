@@ -6,6 +6,11 @@ import FullRange from "../FullRange";
 import GrayFormStep from "../GrayFormStep";
 import HeadingPersonal from "../HeadingPersonal";
 import Range from "../Range";
+import RadioDiv from "./RadioDiv";
+import beginner from "../images/flower.svg";
+import frame from '../images/Frame.svg';
+import boost from '../images/boost.svg';
+import expert from '../images/cup.svg';
 export default function SecondStage() {
   return (
     <div className="bg-white mt-5 p-5 rounded-2xl max-w-[640px] mx-auto h-[525px]">
@@ -26,38 +31,20 @@ export default function SecondStage() {
       <form>
         <div className="flex gap-10 mt-6 ml-6">
           <div>
-            <Inputs
-              labelFor="userName"
-              labelText="Full Name"
-              type="text"
-              innerText="John Doe"
-            />
+            <RadioDiv srcImage={beginner} altText="flowers" level="Beginner" />
           </div>
           <div>
-            <Inputs
-              labelFor="Email"
-              labelText="Email Address"
-              type="email"
-              innerText="johndoe24@gmail.com"
+            <RadioDiv 
+              srcImage={frame} altText='Frame' level='Intermediate'
             />
           </div>
         </div>
         <div className="flex gap-10 mt-6 ml-6">
           <div>
-            <Inputs
-              labelFor="tel"
-              labelText="Phone Number"
-              type="tel"
-              innerText="+91-1234-0890"
-            />
+            <RadioDiv srcImage={boost} altText='boost-image' level='Advance' />
           </div>
           <div className="mb-4">
-            <Inputs
-              labelFor="link"
-              labelText="Portfolio/GitHub Link"
-              type="text"
-              innerText="github.com/taiwosoftware"
-            />
+            <RadioDiv srcImage={expert} altText='cup-image' level='Expert' />
           </div>
         </div>
         <CustomHr />

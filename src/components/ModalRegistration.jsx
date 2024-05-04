@@ -7,15 +7,18 @@ import HeadingPersonal from "./HeadingPersonal";
 import Range from "./Range";
 import SecondStage from "./Stages/SecondStage";
 import Inputs from "./Auth/Inputs";
-
 export default function ModalRegistration() {
-  const [isClicked, setIsClicked] = useState(true);
+  const [isClicked, setIsClicked] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [inputEmail, setEmailValue] = useState("");
   const [inputTelephone, setInputTelephone] = useState("");
   const [linkValue, setLinkValue] = useState("");
   const handleClick = () => {
     setIsClicked(!isClicked);
+    localStorage.setItem('name', inputValue);
+    localStorage.setItem('email', inputEmail);
+    localStorage.setItem('tel', inputTelephone);
+    localStorage.setItem('link', linkValue);
   };
   const handleChange = (e) => {
     setInputValue(e.target.value);
@@ -29,7 +32,6 @@ export default function ModalRegistration() {
   const handleLink = (e) => {
     setLinkValue(e.target.value);
   };
-  // Check if the input is filled if not don't show the second stage component
   return (
     <>
       {isClicked === true ? (
@@ -37,7 +39,7 @@ export default function ModalRegistration() {
           {inputValue === "" ||
           inputEmail === "" ||
           inputTelephone === "" ||
-          linkValue === ""  ? (
+          linkValue === "" === true ? (
             <>
               <div className="bg-white mt-5 p-5 rounded-2xl max-w-[640px] mx-auto h-[525px]">
                 <div className="flex items-center mt-[32px] max-w-[545px] mx-[auto] gap-4">
@@ -188,7 +190,6 @@ export default function ModalRegistration() {
                   </button>
                 </form>
               </div>
-        {/* <SecondStage /> */}
         </>
       )}
     </>
