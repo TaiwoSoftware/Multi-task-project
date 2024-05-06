@@ -25,3 +25,8 @@ html {
 .imageBackground {
   background-color: #fc6c4c;
 }
+
+.go-back {
+  border: 1px solid #fc6c4c;
+  color:#fc6c4c
+}

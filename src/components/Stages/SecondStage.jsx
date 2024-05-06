@@ -1,5 +1,4 @@
 "use client";
-import Inputs from "../Auth/Inputs";
 import CustomHr from "../CustomHr";
 import FormStep from "../FormStep";
 import FullRange from "../FullRange";
@@ -12,6 +11,9 @@ import frame from '../images/Frame.svg';
 import boost from '../images/boost.svg';
 import expert from '../images/cup.svg';
 export default function SecondStage() {
+  const handleBackClick = () => {
+    
+  }
   return (
     <div className="bg-white mt-5 p-5 rounded-2xl max-w-[640px] mx-auto h-[525px]">
       <div className="flex items-center mt-[32px] max-w-[545px] mx-[auto] gap-4">
@@ -48,7 +50,9 @@ export default function SecondStage() {
           </div>
         </div>
         <CustomHr />
+        <button className="w-[110px] rounded-[10px] mt-6 absolute text-center h-[41px] go-back">Go back</button>
         <button
+        onClick={handleBackClick}
           className="text-white w-[110px] ml-[460px] h-[41px] text-center mt-6  rounded-[10px] summit"
           type="submit"
         >
