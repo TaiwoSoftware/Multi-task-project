@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Multi-step Form](./design/desktop-cover.png)
 
-## Getting Started
+**Challenge Title**
+Multi-step Form
 
-First, run the development server:
+**Challenge Description**
+In this frontend challenge, you'll build a Multi-step Form. This challenge is perfect for you if you've been learning CSS and JavaScript and are looking to practice what you've learned by building something new and beginner-friendly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Difficulty Level**
+Beginner
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Tags**
+FRONTEND
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+**Learning**
+In this frontend challenge, you'll learn how to build interactive UI components using CSS and JavaScript. You will learn to use CSS flexbox to create responsive UI components. Additionally, you will also learn to handle the open/close functionality of a modal. You're going to love it!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**Requirements**
 
-## Learn More
+- The Multi-step Form should be triggered by a button, and it should appear as a modal overlay on top of the current page.
+- The modal should include a rating scale that allows users to rate a product on a scale of 1 to 10.
+- Users should be able to select a rating by clicking on a number in the scale.
+- The modal should close when the user submits their feedback.
+- The modal should get closed by clicking on a “Cancel” button or by clicking outside of the modal.
+- The component should be responsive and display correctly on different screen sizes.
+- Make this landing page look as close to the design as possible.
 
-To learn more about Next.js, take a look at the following resources:
+I hope you'll enjoy building this challenge.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to share your solution on the website or on social media and [tag us](https://twitter.com/FrontendProHQ).

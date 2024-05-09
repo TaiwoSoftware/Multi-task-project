@@ -30,3 +30,14 @@ html {
   border: 1px solid #fc6c4c;
   color:#fc6c4c
 }
+
+.emptyInputError p {
+  color: red;
+}
+.none{
+  display: none;
+}
+
+.show {
+  display: block;
+}
