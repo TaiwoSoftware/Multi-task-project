@@ -15,7 +15,7 @@ export default function ModalRegistration() {
   const [inputTelephone, setInputTelephone] = useState("");
   const [linkValue, setLinkValue] = useState("");
   const [isEmpty, setIsEmpty] = useState(false);
-  const handleClick = (e) => {
+  const handleClick = () => {
     setIsClicked(!isClicked);
     localStorage.setItem("name", inputValue);
     localStorage.setItem("email", inputEmail);
