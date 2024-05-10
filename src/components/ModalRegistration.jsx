@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CustomHr from "./CustomHr";
 import FormStep from "./FormStep";
 import GrayFormStep from "./GrayFormStep";
@@ -41,6 +41,9 @@ export default function ModalRegistration() {
   const handleLink = (e) => {
     setLinkValue(e.target.value);
   };
+  useEffect(() => {
+    localStorage.clear()
+  }, [])
   return (
     <>
       {isClicked === true ? (
