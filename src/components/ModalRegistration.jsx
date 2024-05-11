@@ -192,7 +192,7 @@ export default function ModalRegistration() {
                     </div>
                   </div>
                   <CustomHr />
-                  <Link href="/two">
+                  <Link href="/second">
                     <button
                       onClick={handleClick}
                       className="text-white w-[110px] ml-[460px] h-[41px] text-center mt-6  rounded-[10px] summit"

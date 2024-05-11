@@ -1,9 +1,14 @@
-export default function CheckDiv() {
+import Checkbox from "../Auth/Checkbox";
+
+export default function CheckDiv({listId, listTools}) {
   return (
-    <form>
-        <div className="flex gap-10 mt-6 ml-6">
-        <div></div>
-        </div>
-    </form>
-  )
+    <div className="flex gap-10 mt-6 ">
+      <div className="border  w-[254px] px-1 py-[0.2rem] h-[69px] flex gap-6 items-center rounded-[10px]  border-gray-400 cursor-pointer">
+        <Checkbox 
+          checkId={listId}
+          tools={listTools}
+        />
+      </div>
+    </div>
+  );
 }
