@@ -56,7 +56,7 @@ export default function ModalRegistration() {
               {isEmpty && (
                 <EmptyErrorInput message="Fill up the necessary field" />
               )}
-              <div className="bg-white mt-5 p-5 rounded-2xl max-w-[640px] mx-auto h-[525px]">
+              <div className="bg-white shadow-xl  mt-5 p-5 rounded-2xl max-w-[640px] mx-auto h-[525px]">
                 <div className="flex items-center mt-[32px] max-w-[545px] mx-[auto] gap-4">
                   <FormStep stage="1" />
                   <Range />
@@ -131,7 +131,7 @@ export default function ModalRegistration() {
             </>
           ) : (
             <>
-              <div className="bg-white mt-5 p-5 rounded-2xl max-w-[640px] mx-auto h-[525px]">
+              <div className="bg-white shadow-xl mt-5 p-5 rounded-2xl max-w-[640px] mx-auto h-[525px]">
                 <div className="flex items-center mt-[32px] max-w-[545px] mx-[auto] gap-4">
                   <FormStep stage="1" />
                   <Range />
