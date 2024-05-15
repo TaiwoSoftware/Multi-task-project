@@ -42,7 +42,7 @@ export default function ThirdStage() {
           Next Step
         </button>
       </form>
-      <Link href="/two">
+      <Link href="/second">
         <button className="w-[110px] rounded-[10px] mt-[-2.5rem] ml-[1rem] absolute text-center h-[41px] go-back">
           Go back
         </button>
