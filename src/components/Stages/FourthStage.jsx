@@ -74,9 +74,11 @@ export default function FourthStage() {
             Next step
           </button>
         </Link>
+        <Link href='/third'>
         <button className="w-[110px] rounded-[10px] absolute left-6 top-6 text-center h-[41px] go-back">
           Go back
         </button>
+        </Link>
       </div>
     </div>
   );
