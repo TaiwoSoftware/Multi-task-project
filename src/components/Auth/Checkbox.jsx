@@ -1,5 +1,5 @@
 'use client'
-export default function Checkbox({ checkId, tools, handleChecked, handleRequired }) {
+export default function Checkbox({ checkId, tools, handleChecked }) {
   return (
     <div className="p-4 flex items-center">
       <input  checked={handleChecked} className=" accent-red-500 rounded-lg w-4 h-4"  type="checkbox" id={checkId} />
