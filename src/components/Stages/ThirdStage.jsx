@@ -6,7 +6,6 @@ import GrayFormStep from "../GrayFormStep";
 import HeadingPersonal from "../HeadingPersonal";
 import Range from "../Range";
 import CheckDiv from "./CheckDiv";
-
 export default function ThirdStage() {
   return (
     <div className="bg-white shadow-xl mt-5 p-5 rounded-2xl max-w-[640px] mx-auto h-[525px]">

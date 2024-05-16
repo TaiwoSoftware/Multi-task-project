@@ -1,31 +1,32 @@
-'use client'
+"use client";
 import { useEffect, useState } from "react";
 import CustomHr from "../CustomHr";
 import FormStep from "../FormStep";
 import FullRange from "../FullRange";
 import GrayishBackground from "../GrayishBackground";
 import HeadingPersonal from "../HeadingPersonal";
+import Link from "next/link";
 
 export default function FourthStage() {
   // State variables to hold user information
-  const [userName, setUserName] = useState('');
-  const [userEmail, setUserEmail] = useState('');
-  const [userTel, setUserTel] = useState('');
-  const [userLink, setUserLink] = useState('');
-  const [userLevel, setUserLevel] = useState('');
-  const [userPreference, setUserPreference] = useState('');
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userTel, setUserTel] = useState("");
+  const [userLink, setUserLink] = useState("");
+  const [userLevel, setUserLevel] = useState("");
+  const [userPreference, setUserPreference] = useState("");
 
   // useEffect to fetch data from localStorage when component mounts
   useEffect(() => {
     // Check if localStorage is available
-    if (typeof localStorage !== 'undefined') {
+    if (typeof localStorage !== "undefined") {
       // Retrieve user information from localStorage
-      setUserName(localStorage.getItem('name') || '');
-      setUserEmail(localStorage.getItem('email') || '');
-      setUserTel(localStorage.getItem('tel') || '');
-      setUserLink(localStorage.getItem('link') || '');
-      setUserLevel(localStorage.getItem('level') || '');
-      setUserPreference(localStorage.getItem('preference') || '');
+      setUserName(localStorage.getItem("name") || "");
+      setUserEmail(localStorage.getItem("email") || "");
+      setUserTel(localStorage.getItem("tel") || "");
+      setUserLink(localStorage.getItem("link") || "");
+      setUserLevel(localStorage.getItem("level") || "");
+      setUserPreference(localStorage.getItem("preference") || "");
     }
   }, []); // Run only once when component mounts
 
@@ -52,21 +53,31 @@ export default function FourthStage() {
           <GrayishBackground title="Phone number" titleName={userTel} />
         </div>
         <div className="grid gap-6 grid-cols-3">
-          <GrayishBackground title="Portfolio/GitHub Link" titleName={userLink} />
+          <GrayishBackground
+            title="Portfolio/GitHub Link"
+            titleName={userLink}
+          />
           <GrayishBackground title="Skill level" titleName={userLevel} />
-          <GrayishBackground title="Challenge Preference" titleName={userPreference} />
+          <GrayishBackground
+            title="Challenge Preference"
+            titleName={userPreference}
+          />
         </div>
       </div>
       <CustomHr />
       <div className="relative">
-      <button type="submit" className="text-white w-[110px] ml-[460px] h-[41px] text-center mt-6  rounded-[10px] summit">
-        Next step
-      </button>
-      <button className="w-[110px] rounded-[10px] absolute left-6 top-6 text-center h-[41px] go-back">
-        Go back
-      </button>
+        <Link href="/final">
+          <button
+            type="submit"
+            className="text-white w-[110px] ml-[460px] h-[41px] text-center mt-6  rounded-[10px] summit"
+          >
+            Next step
+          </button>
+        </Link>
+        <button className="w-[110px] rounded-[10px] absolute left-6 top-6 text-center h-[41px] go-back">
+          Go back
+        </button>
       </div>
     </div>
   );
- 
 }
