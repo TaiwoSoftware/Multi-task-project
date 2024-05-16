@@ -35,12 +35,14 @@ export default function ThirdStage() {
             <CheckDiv listId="listSkills" listTools="Vue.js" />
           </div>
         </div>
-        <button
-          className="text-white w-[110px] ml-[460px] h-[41px] text-center mt-6  rounded-[10px] summit"
-          type="submit"
-        >
-          Next Step
-        </button>
+        <Link href='/fourth'>
+          <button
+            className="text-white w-[110px] ml-[460px] h-[41px] text-center mt-6  rounded-[10px] summit"
+            type="submit"
+          >
+            Next Step
+          </button>
+        </Link>
       </form>
       <Link href="/second">
         <button className="w-[110px] rounded-[10px] mt-[-2.5rem] ml-[1rem] absolute text-center h-[41px] go-back">
